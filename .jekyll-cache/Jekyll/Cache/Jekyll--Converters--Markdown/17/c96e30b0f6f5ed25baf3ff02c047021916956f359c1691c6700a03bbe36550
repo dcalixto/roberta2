@@ -1,0 +1,55 @@
+I"ž<div class="col-6-12 ">
+<div class="newPopin">
+<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Patitiba%20paraty&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies2.org"></a><br /><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">google iframe</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
+</div>
+</div>
+
+<div class="col-6-12 ">
+
+<div class="newPopin">
+	<div class="newPopin__fixIOS">
+		<div class="newPopin__popinContainer">
+			<div class="newPopin__modalTitle">
+Contato
+<div class="cabInput__container">
+	<label class="cabInput__label">
+		Nome
+	</label>
+	<input type="text" name="" class="cabInput__input" />
+</div>
+<div class="cabInput__container">
+	<label class="cabInput__label">
+		Telefone ou Email
+	</label>
+	<input type="text" name="" class="cabInput__input" />
+</div>
+<div class="cabInput__container">
+	<label class="cabInput__label">
+		Mensagem
+	</label>
+	<textarea cols="24" rows="8" class="cabInput__textarea"></textarea>  
+
+
+
+</div>
+
+<div class="cabInput__container">
+
+
+
+	<button type="submit" class="newPopin__cta--fullSize ">Enviar</button>
+</div>
+
+
+
+
+</div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+:ET

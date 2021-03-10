@@ -1,0 +1,10 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:image" content="{{ site.url }}/photos/montage.jpg" />
+  <meta charset="utf-8" />
+  <title>
+    {% if page.section == "home" %}{{ site.title }}{% else %}{{ page.title |
+    default: site.title }}{% endif %}
+  </title>
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+</head>

@@ -1,0 +1,37 @@
+<div>
+  <h5 class="titleSep h3">Videos</h5>
+  <div class="grid">
+    {% for video in site.videos %}
+    <div class="col-3-12 mobile-col-1-1">
+      <div class="crossSales__itemContainer">
+        <div class="crossSales__item">
+          <div class="boatAd js-boatAd jss-noHoverEffect">
+            <a class=" " href="{{ video.url }}">
+              <img class="responsive" src="{{  video.img | site.baseurl }}" />
+              {% include youtube.html id=video.youtubeId %}
+            </a>
+            <div class="boatAd__description">
+              <h3 class="boatAd__boatNameContainer">
+                <a href="{{ video.url }}" class="h5">{{ video.name }}</a>
+              </h3>
+
+              <div class="ownerBlock__textContainer">
+                <div class="ownerBlock__text">band:</div>
+                <div class="ownerBlock__text--med">{{ video.band }}</div>
+              </div>
+              <div class="ownerBlock__textContainer">
+                <div class="ownerBlock__text">Ano:</div>
+                <div class="ownerBlock__text--med">{{ video.year }}</div>
+              </div>
+              <div class="ownerBlock__textContainer">
+                <div class="ownerBlock__text">Estilo:</div>
+                <div class="ownerBlock__text--med">{{ video.style }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

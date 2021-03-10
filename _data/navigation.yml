@@ -1,0 +1,11 @@
+# specify main menu items here
+
+- text: Dúvidas
+  url: /contact
+
+- text: Regulamento
+  url: /rules
+
+- text: Início
+  url: /
+

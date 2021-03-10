@@ -1,0 +1,99 @@
+
+# Basic settings
+url: "https://www.noitedosadoradores.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Noite dos Adoradores - Concurso de música evangélica, em um  
+espaço alegre e  descontraído com cantores e bandas do Rio de Janeiro"
+  
+tagline: "Concurso de música evangélica"
+# Build settings
+markdown: kramdown
+lang: "pt-br"
+# Kramdown options
+kramdown:
+  # Prevent IDs from being added to h1-h6 tags
+  auto_ids: false
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-menus
+#paginate: 3
+#paginate_path: services/page:num/
+#paginate: 3
+#paginate_path: posts/page:num/
+
+#permalink: /service/:title
+
+source: .
+destination: ./_site
+# Compress CSS
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+collections:
+  events:
+    output: true
+    permalink: /event/:name
+  videos:
+    output: true
+    permalink: /video/:name
+
+
+
+include:
+  - _pages
+  - _events
+  - _videos
+
+
+section: true
+
+# set to 'true' to enable Netlify CMS (/admin) in production builds
+netlifycms: false
+
+# set to 'true' to enable Google Analytics tracking code in production builds
+analytics: false
+
+# Compress HTML (in liquid via layouts/compress.html)
+compress_html:
+  clippings: all
+
+# Social
+
+social:
+  name: noitedosadoradores
+  links:
+    #- https://twitter.com/casahelio
+    - https://www.facebook.com/noitedosadoradores/
+
+# set some common post defaults
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "events" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "event" # set the correct default template for a post
+      section: "event" # set the root section name
+
+# Include in processing (e.g. Netlify directives)
+# Uncomment before use
+
+#include:
+#  - _redirects
+#  - _headers
+
+# Exclude from processing.
+# The following items will not be processed.
+exclude:
+  - README.md
+  - LICENSE.txt
+  - netlify.toml
+  - feed.xml
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

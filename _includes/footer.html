@@ -1,0 +1,95 @@
+<!-- start footer section -->
+
+<footer id="footer" class="footer">
+  {% if site.data.information %} {% assign info = site.data.information %}
+  <div class="footer-pre-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="footer-pre-section-element">
+            <i class="fa fa-phone"></i>
+            <a href="tel:99-234-4345"> {{info.phone}}</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="footer-pre-section-element">
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:calixtodaniel@gmail.com.com">{{info.email}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="footer-main-section">
+    <div class="grid grid-width">
+      <div class="col-3-12">
+        <div>
+          <ul class="list-unstyled">
+            <li>
+              <img
+                style="height: 40px"
+                class="navbar-logo"
+                src="{{ site.baseurl }}/photos/noite.jpg"
+                alt="{{ site.title }}"
+              />
+            </li>
+
+            <li>
+              <i class="fa fa-phone"></i>
+              <a href="tel:(24)993017256"> {{info.phone}}</a>
+            </li>
+
+            <li>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:calixtodaniel@gmail.com">{{info.email}}</a>
+            </li>
+
+            <li>
+              <p>
+                <small>© 2021. Noite dos Adoradores</small>
+              </p>
+            </li>
+            <li><a href="https://www.netjapa.com">NETJAPA</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+        {% if site.data.information %} {% assign info = site.data.information %}
+        <ul class="list-unstyled">
+          <li class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fa fa-facebook-square fa-2x fa-fh"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <i class="fa fa-youtube-play fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <a
+    href="https://api.whatsapp.com/send?phone=5521988690661"
+    class="float"
+    target="_blank"
+  >
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+</footer>
+<!-- end footer section -->
+
+<div class="popin small menu" id="menuMobile">
+  <div class="icon-interface-circle-cross cross"> Fechar</div>
+
+  <div class="user">
+    {% include navigation.html navigation=site.data.navigation %}
+  </div>
+</div>
